@@ -62,10 +62,10 @@ export default function Home() {
           loop
           playsInline
           preload="auto"
-          className="absolute inset-0 h-full w-full object-cover opacity-20 sm:opacity-25 lg:opacity-35"
+          className="absolute inset-0 h-full w-full object-cover opacity-35 sm:opacity-40 lg:opacity-50"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07030f]/95 via-[#12071f]/90 to-[#07030f] lg:bg-gradient-to-r lg:from-[#07030f] lg:via-[#10051f]/90 lg:to-[#07030f]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07030f]/85 via-[#12071f]/75 to-[#07030f] lg:bg-gradient-to-r lg:from-[#07030f]/95 lg:via-[#10051f]/75 lg:to-[#07030f]/35" />
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(236,72,153,0.30),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.22),transparent_32%),radial-gradient(circle_at_50%_90%,rgba(168,85,247,0.22),transparent_35%)]" />
 
@@ -177,6 +177,28 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative px-4 py-10 sm:px-6 sm:py-20 lg:hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07030f] via-[#12071f] to-[#07030f]" />
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.06] p-2 shadow-2xl backdrop-blur-xl">
+            <div className="relative h-[230px] overflow-hidden rounded-2xl">
+              <video
+                src={videos[1]}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                controls
+                controlsList="nodownload"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
