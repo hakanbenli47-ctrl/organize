@@ -287,15 +287,17 @@ export default function Home() {
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-2xl sm:rounded-[2rem]"
               >
                 <div className="relative h-[165px] overflow-hidden sm:h-auto sm:aspect-[9/14]">
-                  <video
-                    src={video}
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    controls
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
+                <video
+  src={video}
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  controls
+  controlsList="nodownload"
+  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+/>
 
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
 
@@ -358,13 +360,12 @@ export default function Home() {
               </p>
 
               <div className="mt-5 grid gap-3 sm:mt-7">
-                <a
-                  href="tel:05386731201"
-                  className="rounded-full bg-white px-6 py-4 text-center text-sm font-black text-black transition hover:bg-yellow-300 sm:text-base"
-                >
-                  Telefonla Ara
-                </a>
-
+               <a
+  href="tel:05386731201"
+  className="rounded-full bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 px-6 py-4 text-center text-sm font-black text-black shadow-[0_0_30px_rgba(236,72,153,0.28)] transition hover:scale-[1.02] sm:text-base"
+>
+  Telefonla Ara
+</a>
                 <a
                   href="https://wa.me/905386731201?text=Merhaba,%20Karaduman%20Organizasyon%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
                   target="_blank"
