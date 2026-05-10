@@ -55,21 +55,21 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#07030f] text-white">
       <section className="relative min-h-screen overflow-hidden bg-[#07030f]">
-      <video
-  src={videos[0]}
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  className="absolute inset-0 h-full w-full object-cover opacity-20 sm:opacity-25 lg:opacity-35"
-/>
+        <video
+          src={videos[0]}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover opacity-20 sm:opacity-25 lg:opacity-35"
+        />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07030f] via-[#12071f] to-[#07030f] lg:bg-gradient-to-r lg:from-[#07030f] lg:via-[#10051f]/90 lg:to-[#07030f]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07030f]/95 via-[#12071f]/90 to-[#07030f] lg:bg-gradient-to-r lg:from-[#07030f] lg:via-[#10051f]/90 lg:to-[#07030f]/50" />
 
-       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(236,72,153,0.30),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.22),transparent_32%),radial-gradient(circle_at_50%_90%,rgba(168,85,247,0.22),transparent_35%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(236,72,153,0.30),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(250,204,21,0.22),transparent_32%),radial-gradient(circle_at_50%_90%,rgba(168,85,247,0.22),transparent_35%)]" />
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:flex lg:min-h-screen lg:items-center lg:py-24">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:min-h-screen lg:items-center lg:py-24">
           <div className="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -181,8 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-      
-
       <section className="relative px-4 py-12 sm:px-6 sm:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-[#07030f] via-[#16071f] to-[#07030f]" />
 
@@ -257,17 +255,17 @@ export default function Home() {
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 shadow-2xl sm:rounded-[2rem]"
               >
                 <div className="relative h-[165px] overflow-hidden sm:h-auto sm:aspect-[9/14]">
-                <video
-  src={video}
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  controls
-  controlsList="nodownload"
-  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-/>
+                  <video
+                    src={video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    controls
+                    controlsList="nodownload"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
 
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
 
@@ -330,12 +328,13 @@ export default function Home() {
               </p>
 
               <div className="mt-5 grid gap-3 sm:mt-7">
-               <a
-  href="tel:05386731201"
-  className="rounded-full bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 px-6 py-4 text-center text-sm font-black text-black shadow-[0_0_30px_rgba(236,72,153,0.28)] transition hover:scale-[1.02] sm:text-base"
->
-  Telefonla Ara
-</a>
+                <a
+                  href="tel:05386731201"
+                  className="rounded-full bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 px-6 py-4 text-center text-sm font-black text-black shadow-[0_0_30px_rgba(236,72,153,0.28)] transition hover:scale-[1.02] sm:text-base"
+                >
+                  Telefonla Ara
+                </a>
+
                 <a
                   href="https://wa.me/905386731201?text=Merhaba,%20Karaduman%20Organizasyon%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
                   target="_blank"
